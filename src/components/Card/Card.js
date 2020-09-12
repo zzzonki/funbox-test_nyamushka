@@ -7,6 +7,19 @@ export default class Card extends Component{
         isSelected: false,
         isHovered: false
     }
+
+    componentDidMount(){
+        const {out} = this.props
+        if(out){
+            this.setState({
+                isDisabled: true
+            })
+        } else{
+            this.setState({
+                isDisabled: false
+            })
+        }
+    }
     render(){
         const {weight, inside, portions, mouses, p3, about} = this.props
         const border_color = this.state.isDisabled ? 'card_border is_disabled' : (this.state.isSelected ? (this.state.isHovered ? 'card_border is_selected-hovered' : 'card_border is_selected') : (this.state.isHovered ? 'card_border is_hovered' : 'card_border is_default')) 

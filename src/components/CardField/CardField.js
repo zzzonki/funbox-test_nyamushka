@@ -1,14 +1,16 @@
 import React, {Component} from 'react'
 import './style.css'
 import Card from '../Card'
+import info from '../../info'
 
 export default class CardField extends Component{
     render(){
+        const element = info.map((i) =>
+            <Card key={i.id} weight={i.weight} inside={i.inside} portions={i.portions} mouses={i.mouses} p3={i.p3} about={i.about} out={i.out} />
+        )
         return(
             <div className='card_field'>
-                <Card weight='0,5' inside='фуа-гра' portions='10' mouses='мышь' p3='' about='Печень утки разварная с артишоками.' />
-                <Card weight='2' inside='рыбой' portions='40' mouses='2 мыши' p3='' about='Головы щучьи с чесноком да свежайшая сёмгушка.' />
-                <Card weight='5' inside='курой' portions='100' mouses='5 мышей' p3='заказчик доволен' about='Филе из цыплят с трюфелями в бульоне.' />
+                {element}
             </div>
         )
     }
