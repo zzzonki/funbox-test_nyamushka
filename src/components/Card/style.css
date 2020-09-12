@@ -1,0 +1,129 @@
+.card_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;      
+}
+.card_outer-text{
+    font-size: 13px;
+    font-family: "Trebuchet MS", sans-serif;
+    color: rgb( 255, 255, 255 );
+}
+.card_outer-text__link{
+    color: rgb( 22, 152, 217 );
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+.card_border{
+    clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
+    width: 320px;
+    height: 480px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.is_disabled{
+    background-color: rgb(179, 179, 179);
+}
+.is_default{
+    background-color: rgb( 22, 152, 217 );
+}
+.is_hovered{
+        background-color: rgb(46, 168, 230);
+}
+.is_selected{
+    background-color: rgb(217, 22, 103);
+}
+.is_selected-hovered{
+    background-color: rgb(230, 46, 122);
+}
+
+.card {
+    clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
+    /* border-width: 4px;
+    border-color: rgb( 22, 152, 217 );
+    border-style: solid; */
+    background-color: rgb( 242, 242, 242 );
+    width: 312px;
+    height: 472px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.card_info{
+    width: 210px;
+    height: 203px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Trebuchet MS", sans-serif;
+    /* align-items: center; */
+}
+.card_info p{
+    font-size: 16px;
+    color: rgb( 102, 102, 102 );
+}
+  
+.card_info h2{
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+}
+.card_info h3{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+}
+.card_info ul{
+    font-size: 14px;
+    color: rgb( 102, 102, 102 );
+    /* font-weight: bold; */
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.card_info li{
+    height: 16px;
+}
+
+.card_pic {
+    background-image: url('../../img/funbox_logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 360px;
+    width: 370px;
+    border-radius: 10px;
+}
+.card_weight{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card_weight p:nth-child(1){
+    font-size: 42px;
+    font-family: "Trebuchet MS";
+    color: white;
+    margin: 0 auto;
+    padding: 0;
+}
+.card_weight p:nth-child(2){
+    font-size: 21px;
+    font-family: "Trebuchet MS", sans-serif;
+    color: white;
+    margin: 0 auto;
+}
+  

@@ -1,0 +1,8 @@
+.card_field{
+    /* max-width: 1120px; */
+    width: 1120px;
+    /* height: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
