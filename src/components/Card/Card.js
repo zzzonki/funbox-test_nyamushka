@@ -14,8 +14,8 @@ export default class Card extends Component{
     const undercard = this.state.isDisabled ? <p className="card_outer-text">Печалька, с {inside} закончился</p> : (this.state.isSelected ? <p className="card_outer-text">{about}</p> : <p className="card_outer-text">Чего сидишь? Порадуй котэ, <span onClick={() => this.cardClick()} className="card_outer-text__link">купи.</span></p>)
         
         return(
-            <div onClick={() => this.cardClick()} onMouseEnter={() => this.cardHover()} onMouseLeave={() => this.cardLeave()} className="card_wrapper">
-                <div className={border_color}>
+            <div className="card_wrapper">
+                <div onClick={() => this.cardClick()} onMouseEnter={() => this.cardHover()} onMouseLeave={() => this.cardLeave()} className={border_color}>
                     <div className="card">
                         <div className='card_info'>
                         <p>Сказочное заморское яство</p>
