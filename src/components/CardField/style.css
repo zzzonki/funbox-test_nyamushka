@@ -1,20 +1,37 @@
-.card_field{
-    width: 1120px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Под нормальный или большой монитор */
+@media screen and (min-width: 1120px){
+    .card_field{
+        width: 1120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
-.card_field__mobile{
-    width: 360px;
-    height: 1650px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+
+/* Под очень маленький монитор */
+@media screen and (max-width: 1119px) and (min-width: 800px){
+    .card_field{
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
-.card_field__tablet-ls{
+
+/* Под мобильные устройства */
+@media screen and (max-width: 799px){
+    .card_field{
+        width: 360px;
+        height: 1650px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+/* .card_field__tablet-ls{
     width: 1024px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
+} */

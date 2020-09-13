@@ -9,7 +9,7 @@ export default class CardField extends Component{
             <Card key={i.id} weight={i.weight} inside={i.inside} portions={i.portions} mouses={i.mouses} p3={i.p3} about={i.about} out={i.out} />
         )
         return(
-            <div className='card_field__tablet-ls'>
+            <div className='card_field'>
                 {element}
             </div>
         )

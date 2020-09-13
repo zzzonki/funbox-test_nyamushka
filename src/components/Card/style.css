@@ -1,9 +1,61 @@
+/* Форма карточки.
+    Меняется в зависимости от размера экрана.
+    В промежутке между 800 и 1119 размеры в процентах, в остальных случаях стандарт. */
+@media not ((max-width: 1119px) and (min-width: 800px)){
+    .card_border{
+        clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
+        width: 320px;
+        height: 480px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
+        background-color: rgb( 242, 242, 242 );
+        width: 312px;
+        height: 472px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+    }
+}
+@media screen and (max-width: 1119px) and (min-width: 800px){
+    .card_border{
+        clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
+        width: calc(28vw + 8px);
+        height: calc(42vw + 8px);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
+        background-color: rgb( 242, 242, 242 );
+        width: 28vw;
+        height: 42vw;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+    }
+}
+
+/* Вся область карточки */
 .card_wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;      
 }
 
+/* Подпись под карточкой */
 .card_outer-text{
     font-size: 13px;
     font-family: "Trebuchet MS", sans-serif;
@@ -19,17 +71,8 @@
     font-family: "Trebuchet MS", sans-serif;
     color: rgb( 255, 255, 102 );
 }
-  
-.card_border{
-    clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
-    width: 320px;
-    height: 480px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
+/* Состояния бордера и круга */
 .is_disabled{
     background-color: rgb(179, 179, 179);
 }
@@ -46,22 +89,7 @@
     background-color: rgb(230, 46, 122);
 }
 
-.card {
-    clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
-    /* border-width: 4px;
-    border-color: rgb( 22, 152, 217 );
-    border-style: solid; */
-    background-color: rgb( 242, 242, 242 );
-    width: 312px;
-    height: 472px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    position: relative;
-}
-
+/* Дизейбл карточки (кроме бордера и круга) */
 .is-disabled_opacity .card_info{
     opacity: 0.15;
 }
@@ -69,6 +97,7 @@
     opacity: 0.6;
 }
 
+/* Содержимое карточки */
 .card_info{
     width: 210px;
     height: 203px;
@@ -76,13 +105,11 @@
     flex-direction: column;
     justify-content: center;
     font-family: "Trebuchet MS", sans-serif;
-    /* align-items: center; */
 }
 .card_info p{
     font-size: 16px;
     color: rgb( 102, 102, 102 );
-}
-  
+} 
 .card_info h2{
     font-size: 48px;
     font-weight: bold;
@@ -97,7 +124,6 @@
 .card_info ul{
     font-size: 14px;
     color: rgb( 102, 102, 102 );
-    /* font-weight: bold; */
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
@@ -105,7 +131,6 @@
 .card_info li{
     height: 16px;
 }
-
 .card_pic {
     background-image: url('../../img/funbox_logo.png');
     background-size: cover;
