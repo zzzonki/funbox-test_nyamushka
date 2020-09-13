@@ -1,8 +1,20 @@
 .card_field{
-    /* max-width: 1120px; */
     width: 1120px;
-    /* height: 100%; */
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.card_field__mobile{
+    width: 360px;
+    height: 1650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.card_field__tablet-ls{
+    width: 1024px;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
