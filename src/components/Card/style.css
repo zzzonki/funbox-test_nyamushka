@@ -1,7 +1,7 @@
 /* Форма карточки.
     Меняется в зависимости от размера экрана.
     В промежутке между 800 и 1119 размеры в процентах, в остальных случаях стандарт. */
-@media not (((max-width: 1119px) and (min-width: 800px))){
+@media screen and (min-width: 1120px), (max-width: 799px){
     .card_border{
         clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
         width: 320px;
