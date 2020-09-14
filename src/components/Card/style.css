@@ -1,7 +1,7 @@
 /* Форма карточки.
     Меняется в зависимости от размера экрана.
     В промежутке между 800 и 1119 размеры в процентах, в остальных случаях стандарт. */
-@media not ((max-width: 1119px) and (min-width: 800px)){
+@media not (((max-width: 1119px) and (min-width: 800px))){
     .card_border{
         clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
         width: 320px;
@@ -39,6 +39,29 @@
         background-color: rgb( 242, 242, 242 );
         width: 28vw;
         height: 42vw;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+    }
+}
+@media screen and (max-width: 799px) and (min-width: 700px) and (orientation:portrait){
+    .card_border{
+        clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
+        width: calc(28vh + 8px);
+        height: calc(42vh + 8px);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
+        background-color: rgb( 242, 242, 242 );
+        width: 28vh;
+        height: 42vh;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
