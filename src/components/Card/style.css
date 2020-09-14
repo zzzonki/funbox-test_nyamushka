@@ -129,6 +129,12 @@
     justify-content: center;
     font-family: "Trebuchet MS", sans-serif;
 }
+@media screen and (max-width: 699px){
+    .card_info{
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+}
 .card_info p{
     font-size: 16px;
     color: rgb( 102, 102, 102 );
