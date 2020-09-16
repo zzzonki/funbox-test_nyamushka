@@ -22,6 +22,7 @@
         align-items: center;
         cursor: pointer;
         position: relative;
+        justify-content: start;
     }
 }
 @media screen and (max-width: 1119px) and (min-width: 800px){
@@ -45,6 +46,7 @@
         align-items: center;
         cursor: pointer;
         position: relative;
+        justify-content: flex-start;
     }
 }
 @media screen and (max-width: 799px) and (min-width: 700px) and (orientation:portrait){
@@ -68,6 +70,7 @@
         align-items: center;
         cursor: pointer;
         position: relative;
+        justify-content: flex-start;
     }
 }
 
@@ -123,21 +126,21 @@
 /* Содержимое карточки */
 .card_info{
     width: 210px;
-    height: 203px;
+    min-height: 186.5px;
+    height: initial;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     font-family: "Trebuchet MS", sans-serif;
-}
-@media screen and (max-width: 699px){
-    .card_info{
-        margin-top: 16px;
-        margin-bottom: 16px;
-    }
+    position: relative;
+    margin-top: 16px;
 }
 .card_info p{
     font-size: 16px;
     color: rgb( 102, 102, 102 );
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-bottom: 8px;
 } 
 .card_info h2{
     font-size: 48px;
@@ -156,17 +159,21 @@
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
+    height: 48px;
 }
 .card_info li{
-    height: 16px;
+    /* height: 16px; */
+    display: block;
 }
 .card_pic {
     background-image: url('../../img/funbox_logo.png');
-    background-size: cover;
+    background-size: 118.5%;
     background-repeat: no-repeat;
-    height: 360px;
-    width: 370px;
+    height: inherit;
+    width: inherit;
     border-radius: 10px;
+    position: relative;
+    background-position: 50% 0%;
 }
 .card_weight{
     position: absolute;

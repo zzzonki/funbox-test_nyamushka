@@ -9,7 +9,7 @@
 }
 
 /* Под очень маленький монитор */
-@media screen and (max-width: 1119px) and (min-width: 800px){
+@media screen and (max-width: 1119px) and (min-width: 800px) and (orientation:landscape){
     .card_field{
         width: 100vw;
         display: flex;
@@ -30,14 +30,14 @@
     }
 }
 
-@media screen and (max-width: 799px) and (min-width: 700px) and (orientation:portrait){
-    /* .card_field{
+@media screen and (min-width: 700px) and (orientation:portrait){
+    .card_field{
         width: 100vw;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-    } */
+    }
     .card_field__line{
         width: 100vw;
         display: flex;

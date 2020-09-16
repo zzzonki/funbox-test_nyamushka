@@ -10,13 +10,13 @@ export default class CardField extends Component{
 
     mediaUpdate = () => {
         this.setState({
-            onTablet: window.matchMedia('screen and (max-width: 799px) and (min-width: 700px) and (orientation:portrait)').matches
+            onTablet: window.matchMedia('screen and (min-width: 700px) and (orientation:portrait)').matches
         })
     }
 
     componentDidMount(){
         this.setState({
-            onTablet: window.matchMedia('screen and (max-width: 799px) and (min-width: 700px) and (orientation:portrait)').matches
+            onTablet: window.matchMedia('screen and (min-width: 700px) and (orientation:portrait)').matches
         })
         window.addEventListener('resize', this.mediaUpdate)
     }

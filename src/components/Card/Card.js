@@ -30,8 +30,8 @@ export default class Card extends Component{
                         <h2>Нямушка</h2>
                         <h3>с {inside}</h3>
                         <ul>
-                            <li>{portions} порций</li>
-                            <li>{mouses} в подарок</li>
+                            <li><b>{portions}</b> порций</li>
+                            <li><b>{mouses}</b> в подарок</li>
                             <li>{p3}</li>
                         </ul>
                         </div>
