@@ -22,7 +22,7 @@
         align-items: center;
         cursor: pointer;
         position: relative;
-        justify-content: start;
+        justify-content: flex-start;
     }
 }
 @media screen and (max-width: 1119px) and (min-width: 800px){
