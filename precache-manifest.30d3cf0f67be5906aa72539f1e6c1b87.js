@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "88c4143c961a5be7505b1c35d99d59f6",
+    "revision": "04202187079472de359078f205e8f9cc",
     "url": "/funbox-test_nyamushka/index.html"
   },
   {
