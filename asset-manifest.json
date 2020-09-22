@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/funbox-test_nyamushka/static/css/main.e7a484cd.chunk.css",
+    "main.js": "/funbox-test_nyamushka/static/js/main.161e7ea4.chunk.js",
+    "main.js.map": "/funbox-test_nyamushka/static/js/main.161e7ea4.chunk.js.map",
+    "runtime-main.js": "/funbox-test_nyamushka/static/js/runtime-main.21dc4d73.js",
+    "runtime-main.js.map": "/funbox-test_nyamushka/static/js/runtime-main.21dc4d73.js.map",
+    "static/js/2.7c236ac3.chunk.js": "/funbox-test_nyamushka/static/js/2.7c236ac3.chunk.js",
+    "static/js/2.7c236ac3.chunk.js.map": "/funbox-test_nyamushka/static/js/2.7c236ac3.chunk.js.map",
+    "index.html": "/funbox-test_nyamushka/index.html",
+    "precache-manifest.8adb51df122331949515220ceb7a7400.js": "/funbox-test_nyamushka/precache-manifest.8adb51df122331949515220ceb7a7400.js",
+    "service-worker.js": "/funbox-test_nyamushka/service-worker.js",
+    "static/css/main.e7a484cd.chunk.css.map": "/funbox-test_nyamushka/static/css/main.e7a484cd.chunk.css.map",
+    "static/js/2.7c236ac3.chunk.js.LICENSE.txt": "/funbox-test_nyamushka/static/js/2.7c236ac3.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/funbox-test_nyamushka/static/media/funbox_logo.26b0c414.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.21dc4d73.js",
+    "static/js/2.7c236ac3.chunk.js",
+    "static/css/main.e7a484cd.chunk.css",
+    "static/js/main.161e7ea4.chunk.js"
+  ]
+}
